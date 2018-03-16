@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
+	<title>Nike</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,9 @@
 <body>
 	<div class="ba-container">
 		<section class="ba-product">
+			<div class="ba-product__logo">
+				<img src="img/logo.png" alt="Nike">
+			</div>
 			<div class="ba-product__image">
 				<img src="img/Nike-SB.png" alt="nike sb stefan janoski max">
 			</div>
@@ -24,11 +27,11 @@
 				<div class="ba-product__prod-description">
 					<p>Unisex Skateboarding Shoe</p>
 				</div>
-				<div class="ba-rating">★★★★★</div>
-				<form action="#" method="post">
+				<div class="ba-rating">★★★<span class="ba-rating-negative">★★</span></div>
+				<form action="#" method="post" class="ba-form">
 					<div class="ba-sizes_values">
-						<select name="menu" size="1">
-							<option value="first" selected="selected">size</option>
+						<select name="menu" size="1" class="ba-select">
+							<option value="first" selected="selected">Size</option>
 							<option value="second">7</option>
 							<option value="third">8</option>
 							<option value="fourth">9</option>
@@ -37,8 +40,8 @@
 						</select>
 					</div>
 					<div class="ba-qty">
-						<select name="menu" size="1">
-							<option value="first" selected="selected">Qty</option>
+						<select name="menu" size="1" class="ba-select">
+							<option value="first" selected="selected" >Qty</option>
 						</select>
 					</div>
 					<button class="ba-button" type="submit">Add to cart</button>
